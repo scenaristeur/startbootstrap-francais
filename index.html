@@ -54,7 +54,7 @@
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Démarre Bootstrap</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">Une traduction du tutoriel de startbootstrap en français.</h2>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Une traduction du tutoriel de <a href="https://startbootstrap.com/guides/how-to-create-a-website-with-github-pages/" target="_blank">startbootstrap</a> en français.</h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">Démarrer</a>
       </div>
     </div>
@@ -65,9 +65,19 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Construit avec Bootstrap 4</h2>
-          <p class="text-white-50">Traduction du
-            <a href="https://startbootstrap.com/guides/how-to-create-a-website-with-github-pages/" target="_blank">tutoriel</a> permettant d'héberger un site bootstrap sur Github. Idéal pour démarrer.</p>
+          <h2 class="text-white mb-4">Ce site a été construit avec Bootstrap 4</h2>
+          <p class="text-white-50">et présente un traduction du
+            <a href="https://startbootstrap.com/guides/how-to-create-a-website-with-github-pages/" target="_blank">tutoriel</a> permettant d'héberger un site bootstrap sur Github. C'est idéal pour démarrer.</p>
+
+            <p  class="text-white-50">
+              Il existe de nombreux outils pour construire des sites webs. Bootstrap est l'un d'eux.
+            </p>
+
+            <p  class="text-white-50">
+              Bootstrap est une collection d'outils utiles à la création du design de sites et d'applications web.
+              C'est un ensemble qui contient des codes HTML et CSS, des formulaires, boutons, outils de navigation et autres éléments interactifs, ainsi que des extensions JavaScript en option.<br>
+              <a href="https://fr.wikipedia.org/wiki/Bootstrap_(framework)" target="_blank">la page Wikipédia sur Bootstrap</a>  -|- <a href="https://getbootstrap.com/" target="_blank"> le site officiel BOOTSTRAP</a>
+            </p>
           </div>
         </div>
         <img src="img/ipad.png" class="img-fluid" alt="">
@@ -391,7 +401,10 @@
                 <div class="project-text w-100 my-auto text-center text-lg-right">
                   <h4 class="text-white">Etape 8: Fusionnez les fichiers modifiés dans la branche 'gh-pages'</h4>
                   <p class="mb-0 text-white-50">
-
+                    Vos changements ont étés "commités" et "pushés" vers la branche "master" de votre dépôt,
+                    mais lorsque l'on utilise les 'Github pages',
+                    ce sont les fichiers qui sont présents dans la branche 'gh-pages' qui sont présentés.<br>
+                    Cela signifie que nous devons fusionner les fichiers modifiés depuis la branche 'master' vers la branche 'gh-pages'!
                   </p>
                   <hr class="d-none d-lg-block mb-0 mr-0">
                 </div>
@@ -401,7 +414,104 @@
         </div>
 
 
-        <!-- MODELE-->
+
+
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">Etape 8a: </h4>
+                  <p class="mb-0 text-white-50">
+                    Fusionner votre branche 'master' vers votre branche 'gh-pages' nécessite quelques étapes.<br>
+                    D'abord, vous devez allez sur votre dépôt, assurez-vous que vous êtes bien positionné sur votre branche "master" et cliquez sur le bouton "New pull request"
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/pull-request.jpg" alt="">
+          </div>
+        </div>
+
+
+
+        <div class="row justify-content-center no-gutters">
+
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">Etape 8b:</h4>
+                  <p class="mb-0 text-white-50">
+                    Ensuite, comme nous avons "forké" le thème depuis un autre dépôt, nous devons être certains que le dépôt de base est bien notre dépôt et non celui d'origine (Start Bootstrap).<br>
+                    Pour le modifier, changez le dépôt de base dans le menu déroulant et choisissez le dépôt "votre_nom_utilisateur_github/le_nom_de_votre_depot" (comme choisi à l'étape 4b).<br><br>
+                    Lorsque vous avez réglé le dépôt de base sur votre propre compte, vous allez devoir indiquer la branche de base pour cette "pull request".<br>
+                    Dans le menu déroulant, assurez-vous que le dépôt "Base" est positionné sur 'gh-pages'. Ceci va comparer la branche 'master' avec la branche 'gh-pages'
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/compare-changes.jpg" alt="">
+          </div>
+        </div>
+
+
+
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">Etape 8c:</h4>
+                  <p class="mb-0 text-white-50">
+                    A ce stade, vous devriez retrouver votre message de commit ainsi qu'un résumé des fichiers qui vont être fusionnés. Cliquez sur 'Create pull request'.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/open-pull-request.jpg" alt="">
+          </div>
+        </div>
+
+
+
+        <div class="row justify-content-center no-gutters">
+
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">Etape 8d:</h4>
+                  <p class="mb-0 text-white-50">
+                    Enfin, vous devez cliquer sur 'Merge pull request' et ensuite sur 'Confirm merge' pour finaliser la fusion.
+                  </p>
+                  <p class="mb-0 text-white-50">
+                    Si tout se passe bien, la branche 'gh-pages' est maintenant identique à la branche "master" et 'Github pages' doit afficher votre site web à l'adresse http://nom_de_votre_compte.github.io/nom_de_votre_depot.</br>
+                    Gardez à la l'esprit que la mise à jour peut prendre quelques minutes avant d'être réellement visible, c'est le temps que le serveur prenne en compte votre modification.<br>
+                    Laissez-lui un peu de temps, et assurez-vous que votre site web est accessible après quelques instants.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/merge.jpg" alt="">
+          </div>
+        </div>
+
+
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div class="col-lg-6">
             <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
@@ -410,9 +520,19 @@
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">D_</h4>
+                  <h4 class="text-white">Détails additionnels</h4>
                   <p class="mb-0 text-white-50">
-                    __
+                    Si vous souhaitez mettre à jour votre site, répétez juste les étapes 6 à 8 de ce tutoriel.<br>
+                    Vous allez effectuer les changements localement et "pusher" les changements vers la branche 'master' de votre dépôt Github,
+                    puis de nouveau fusionner la branche 'master' dans la branche 'gh-pages'!<br><br>
+                    Si vous souhaitez un nom de domaine personnalisé pour votre site web, vous pouvez égalemtn le régler dans 'Github pages'.
+                    Vous aurez besoin d'acheter un nom de domaine et faire pointer ce domaine sur le serveur github. Voir la doc sur github.<br><br>
+                    C'est tout !<br><br>
+                    Maintenant vous avez un site web en ligne gratuitement ! Merci Github<br><br>
+                    Et merci à vous d'avoir suivi ce tutoriel !<br><br>
+
+                    [rappel : traduction de <a href="https://startbootstrap.com/guides/how-to-create-a-website-with-github-pages/" target="_blank">How to Create and Launch a Website from Start to Finish</a>]
+
                   </p>
                   <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
@@ -422,124 +542,187 @@
         </div>
 
 
+      </div>
 
-        <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+
+      <!--
+      <div class="row justify-content-center no-gutters">
+      <div class="col-lg-6">
+      <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+    </div>
+    <div class="col-lg-6 order-lg-first">
+    <div class="bg-black text-center h-100 project">
+    <div class="d-flex h-100">
+    <div class="project-text w-100 my-auto text-center text-lg-right">
+    <h4 class="text-white"> G</h4>
+    <p class="mb-0 text-white-50">
+
+  </p>
+  <hr class="d-none d-lg-block mb-0 mr-0">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+<div class="col-lg-6">
+<img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+</div>
+<div class="col-lg-6">
+<div class="bg-black text-center h-100 project">
+<div class="d-flex h-100">
+<div class="project-text w-100 my-auto text-center text-lg-left">
+<h4 class="text-white">D_</h4>
+<p class="mb-0 text-white-50">
+__
+</p>
+<hr class="d-none d-lg-block mb-0 ml-0">
+</div>
+</div>
+</div>
+</div>-->
+
+<!-- MODELE
+<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+<div class="col-lg-6">
+<img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+</div>
+<div class="col-lg-6">
+<div class="bg-black text-center h-100 project">
+<div class="d-flex h-100">
+<div class="project-text w-100 my-auto text-center text-lg-left">
+<h4 class="text-white">D_</h4>
+<p class="mb-0 text-white-50">
+__
+</p>
+<hr class="d-none d-lg-block mb-0 ml-0">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="row justify-content-center no-gutters">
+<div class="col-lg-6">
+<img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+</div>
+<div class="col-lg-6 order-lg-first">
+<div class="bg-black text-center h-100 project">
+<div class="d-flex h-100">
+<div class="project-text w-100 my-auto text-center text-lg-right">
+<h4 class="text-white"> G</h4>
+<p class="mb-0 text-white-50">
+
+</p>
+<hr class="d-none d-lg-block mb-0 mr-0">
+</div>
+</div>
+</div>
+</div>
+</div>
+-->
+
+
+</div>
+</section>
+
+<!-- Signup Section -->
+<section id="signup" class="signup-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+        <form class="form-inline d-flex">
+          <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+          <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section bg-black">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Address</h4>
+            <hr class="my-4">
+            <div class="small text-black-50">4923 Market Street, Orlando FL</div>
           </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white"> G</h4>
-                  <p class="mb-0 text-white-50">
+        </div>
+      </div>
 
-                  </p>
-                  <hr class="d-none d-lg-block mb-0 mr-0">
-                </div>
-              </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-envelope text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Email</h4>
+            <hr class="my-4">
+            <div class="small text-black-50">
+              <a href="#">hello@yourdomain.com</a>
             </div>
           </div>
         </div>
-
-
-
       </div>
-    </section>
 
-    <!-- Signup Section -->
-    <section id="signup" class="signup-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-
-            <form class="form-inline d-flex">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-            </form>
-
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Phone</h4>
+            <hr class="my-4">
+            <div class="small text-black-50">+1 (555) 902-8832</div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Contact Section -->
-    <section class="contact-section bg-black">
-      <div class="container">
+    <div class="social d-flex justify-content-center">
+      <a href="#" class="mx-2">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="mx-2">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="mx-2">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
 
-        <div class="row">
+  </div>
+</section>
 
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Address</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-              </div>
-            </div>
-          </div>
+<!-- Footer -->
+<footer class="bg-black small text-center text-white-50">
+  <div class="container">
+    Copyright &copy; Your Website 2019
+  </div>
+</footer>
 
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Email</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  <a href="#">hello@yourdomain.com</a>
-                </div>
-              </div>
-            </div>
-          </div>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Phone</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">+1 (555) 902-8832</div>
-              </div>
-            </div>
-          </div>
-        </div>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        <div class="social d-flex justify-content-center">
-          <a href="#" class="mx-2">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
+<!-- Custom scripts for this template -->
+<script src="js/grayscale.min.js"></script>
 
-      </div>
-    </section>
+</body>
 
-    <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
-      <div class="container">
-        Copyright &copy; Your Website 2019
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
-
-  </body>
-
-  </html>
+</html>
